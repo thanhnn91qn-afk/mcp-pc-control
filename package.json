@@ -1,0 +1,21 @@
+{
+  "name": "mcp-pc-control",
+  "version": "1.0.0",
+  "description": "MCP server: AI agent điều khiển máy Windows như người (chụp màn, chuột, phím) qua host tray local",
+  "type": "module",
+  "bin": {
+    "mcp-pc-control": "./mcp/index.mjs"
+  },
+  "scripts": {
+    "start": "node mcp/index.mjs",
+    "build-host": "dotnet build host/McpPcHost.csproj -c Release",
+    "setup": "cmd /c setup.cmd"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.1"
+  },
+  "license": "MIT"
+}

@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net48</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <RootNamespace>McpPcSetup</RootNamespace>
+    <AssemblyName>McpPcSetup</AssemblyName>
+    <LangVersion>latest</LangVersion>
+    <Nullable>disable</Nullable>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationIcon>app.ico</ApplicationIcon>
+    <Version>1.0.0</Version>
+    <Product>MCP PC Control Setup</Product>
+    <Description>Bộ cài / gỡ MCP PC Control (giống HPCSetupAgent)</Description>
+  </PropertyGroup>
+</Project>
