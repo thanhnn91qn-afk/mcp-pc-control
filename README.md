@@ -86,6 +86,10 @@ Cursor / other clients — see `%ProgramData%\McpPcControl\mcp.cursor.example.js
 
 Suggested loop: `desktop_windows` → `desktop_screenshot` → click/type/key → `desktop_screenshot` to verify. Invalid or missing parameters return an error instead of acting.
 
+### Agent skill
+
+[skills/pc-control/SKILL.md](skills/pc-control/SKILL.md) tells an agent when and how to use these tools (workflow, focus and coordinate pitfalls, safety rules). Copy the `pc-control` folder into your agent's skills directory (for Claude Code: `~/.claude/skills/`).
+
 ### Security
 
 Anything holding the token can control this PC. Keep `token.txt` private, install only on machines you own, and uninstall with `McpPcSetup.exe /uninstall` (or `go-cai.cmd`) when not needed.
@@ -175,6 +179,10 @@ Cursor / client khác — xem `%ProgramData%\McpPcControl\mcp.cursor.example.jso
 | `desktop_wait` | Chờ N ms (tối đa 60000) |
 
 Quy trình gợi ý: `desktop_windows` → `desktop_screenshot` → click/type/key → `desktop_screenshot` kiểm tra. Tham số thiếu hoặc sai sẽ trả lỗi, không tự thao tác.
+
+### Skill cho agent
+
+[skills/pc-control/SKILL.md](skills/pc-control/SKILL.md) hướng dẫn agent khi nào và dùng các tool này thế nào (quy trình, bẫy focus và tọa độ, quy tắc an toàn). Chép thư mục `pc-control` vào thư mục skills của agent (Claude Code: `~/.claude/skills/`).
 
 ### Bảo mật
 
